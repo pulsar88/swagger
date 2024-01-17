@@ -1,0 +1,29 @@
+{
+    "name": "fillincode/swagger",
+    "description": "Package for generating OpenApi documentation",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fillincode\\Swagger\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fillincode",
+            "email": "info@1rank.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fillincode\\Swagger\\SwaggerServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "darkaonline/l5-swagger": "^8.5",
+        "symfony/yaml": "^6.3"
+    }
+}
