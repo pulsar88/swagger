@@ -129,7 +129,7 @@ class TestParser
 
         $reflectionClass = (new ReflectionClass($attribute->path));
 
-        if (! empty($preString)) {
+        if (! empty($preString) && !empty($attribute->name)) {
             $preString .= '.'.$attribute->name;
         }
 
