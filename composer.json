@@ -24,6 +24,6 @@
     "require": {
         "php": "^8.0",
         "darkaonline/l5-swagger": "^8.5",
-        "symfony/yaml": "^6.3"
+        "symfony/yaml": "^6.0"
     }
 }
