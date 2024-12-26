@@ -2,7 +2,7 @@
 
 namespace Fillincode\Swagger\Attributes;
 
-#[\Attribute(\Attribute::TARGET_METHOD)]
+#[\Attribute(\Attribute::TARGET_METHOD|\Attribute::TARGET_CLASS)]
 class Group
 {
     /**

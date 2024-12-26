@@ -67,6 +67,14 @@ class TestParser
         $controller = new ReflectionClass($actionName[0]);
         $method = $controller->getMethod($actionName[1]);
 
+        foreach ($controller->getAttributes() as $attribute) {
+            $result = $this->parseAttribute($attribute);
+
+            if ($result) {
+                $this->data['method_attributes'][] = $result;
+            }
+        }
+
         foreach ($method->getAttributes() as $attribute) {
             $result = $this->parseAttribute($attribute);
 

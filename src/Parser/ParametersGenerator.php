@@ -82,7 +82,7 @@ class ParametersGenerator
                 'nullable' => ! $parameter['required'],
                 'schema' => $schema,
                 'examples' => [
-                    $parameter['type'] => [
+                    $parameter['example'] => [
                         'value' => $parameter['example'],
                     ],
                 ],
